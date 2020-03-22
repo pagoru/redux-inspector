@@ -2,6 +2,7 @@
   "name": "@pagoru/redux-middleware",
   "version": "0.0.0",
   "description": "",
+  "author": "@pagoru",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "repository": "https://github.com/pagoru/redux-middleware",
@@ -15,10 +16,11 @@
     "update": "git add -A && git commit -m \"Auto-Update lib\" && git push"
   },
   "keywords": [
+    "redux",
+    "middleware",
     "node",
     "typescript"
   ],
-  "author": "darkaqua",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "latest",
