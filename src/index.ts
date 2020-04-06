@@ -1,9 +1,9 @@
 
 const handlerDispatch = [];
 
-export const middlewareHandler = (
-    willDispatch: (action: { type: string, data: any }, getState) => Object,
-    didDispatch: (action: { type: string, data: any }, getState) => void
+export const middlewareHandler = <A, S>(
+    willDispatch: (action: A, getState: () => S) => A,
+    didDispatch: (action: A, getState: () => S) => void
 ) => {
     // @ts-ignore
     handlerDispatch.push({ willDispatch, didDispatch });
